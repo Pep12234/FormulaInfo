@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FormulaInfo.com - Stopite v stik z nami ali rešite F1 kviz.">
+    <meta name="keywords" content="Formula 1, Kontakt, Kviz, Spletni obrazec">
+    <meta name="author" content="Tvoje Ime">
+    <title>FormulaInfo.com | Kontakt in Kviz</title>
+    <link rel="stylesheet" href="CSSstyle.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kontakt in F1 Kviz</h1>
+        <p>Pošljite nam sporočilo ali preizkusite svoje znanje o Formuli 1</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="dirke.html">Dirke 2026</a></li>
+            <li><a href="dirkaci.html">Dirkači</a></li>
+            <li><a href="ekipe.html">Ekipe</a></li>
+            <li><a href="pravila.html">Pravila</a></li>
+            <li><a href="kontakt.html" class="trenutno">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main style="max-width: 800px; margin: 0 auto; padding: 20px;">
+        <section style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+            <h2>Stopite v stik z nami</h2>
+            <p style="margin-bottom: 20px;">Izpolnite spodnji obrazec za vprašanja ali sodelovanje v nagradnem kvizu.</p>
+
+            <form action="#" method="post">
+                <fieldset style="border: 1px solid #ddd; padding: 20px; border-radius: 6px; margin-bottom: 20px;">
+                    <legend style="padding: 0 10px; font-weight: bold; color: #e10600;">Osebni podatki</legend>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <label for="ime" style="display: block; margin-bottom: 5px; font-weight: bold;">Ime in Priimek:</label>
+                        <input type="text" id="ime" name="ime" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold;">E-poštni naslov:</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+                </fieldset>
+
+                <fieldset style="border: 1px solid #ddd; padding: 20px; border-radius: 6px; margin-bottom: 20px;">
+                    <legend style="padding: 0 10px; font-weight: bold; color: #e10600;">F1 Poznavalski Kviz</legend>
+
+                    <div style="margin-bottom: 15px;">
+                        <label for="ekipa" style="display: block; margin-bottom: 5px; font-weight: bold;">Za katero moštvo navijate?</label>
+                        <select id="ekipa" name="ekipa" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                            <option value="none">-- Izberite ekipo --</option>
+                            <option value="ferrari">Ferrari</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="mclaren">McLaren</option>
+                            <option value="redbull">Red Bull Racing</option>
+                            <option value="drugo">Drugo</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <span style="display: block; margin-bottom: 5px; font-weight: bold;">Kateri dirkač ima največ naslovov prvaka v zgodovini?</span>
+                        <label style="display: block; margin-bottom: 5px;">
+                            <input type="radio" name="prvak" value="hamilton_schumacher"> Lewis Hamilton / Michael Schumacher (7)
+                        </label>
+                        <label style="display: block; margin-bottom: 5px;">
+                            <input type="radio" name="prvak" value="verstappen"> Max Verstappen (4)
+                        </label>
+                        <label style="display: block; margin-bottom: 5px;">
+                            <input type="radio" name="prvak" value="senna"> Ayrton Senna (3)
+                        </label>
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label style="display: block; font-weight: bold;">
+                            <input type="checkbox" name="novice" value="da" checked> Želim se prijaviti na tedenske e-novice o Formuli 1
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="sporocilo" style="display: block; margin-bottom: 5px; font-weight: bold;">Vaše sporočilo ali komentar:</label>
+                    <textarea id="sporocilo" name="sporocilo" rows="5" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;"></textarea>
+                </div>
+
+                <button type="submit" class="gumb-domov" style="border: none; cursor: pointer; padding: 12px 25px;">Pošlji obrazec</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FormulaInfo.com. Vse pravice pridržane.</p>
+    </footer>
+
+</body>
+</html>
